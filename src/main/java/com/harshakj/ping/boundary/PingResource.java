@@ -7,7 +7,7 @@ import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 /**
  *
- * @author airhacks.com
+ * @author
  */
 @Path("ping")
 public class PingResource {
@@ -18,7 +18,7 @@ public class PingResource {
 
     @GET
     public String ping() {
-        return this.message + " Jakarta EE with MicroProfile 2+!";
+        return this.message + " Jakarta EE with MicroProfile 2+!!!";
     }
 
 }
