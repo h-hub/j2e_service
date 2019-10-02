@@ -8,10 +8,9 @@
 	<packaging>war</packaging>
 	<dependencies>
 		<dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-api</artifactId>
-			<version>8.0</version>
-			<scope>provided</scope>
+			<groupId>jakarta.platform</groupId>
+			<artifactId>jakarta.jakartaee-api</artifactId>
+			<version>8.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.microprofile</groupId>
@@ -19,6 +18,12 @@
 			<version>2.0.1</version>
 			<type>pom</type>
 			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>5.4.5.Final</version>
 		</dependency>
 	</dependencies>
 	<build>

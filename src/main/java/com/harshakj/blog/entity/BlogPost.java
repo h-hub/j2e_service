@@ -1,11 +1,29 @@
-package com.harshakj.blog.model;
+package com.harshakj.blog.entity;
 
+import javax.json.bind.annotation.JsonbProperty;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class BlogPost {
 	
-	private long id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	
+	@JsonbProperty("title")
+	@Column
 	private String title;
+	
+	@JsonbProperty("content")
+	@Column
 	private String content;
 	
+	public BlogPost() {}
+
 	public BlogPost(String title, String content) {
 		this.title = title;
 		this.content = content;
